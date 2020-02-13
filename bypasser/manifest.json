@@ -1,0 +1,23 @@
+{
+  "name": "Imgur Sign-in Bypasser",
+  "description": "Bypass the sign-in needed to view some pages.",
+  "version": "1.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16":"imgur_icon16.png",
+    "48":"imgur_icon48.png",
+    "128":"imgur_icon128.png"
+  },
+  "browser_action": {
+      "default_title": "Imgur Sign-in Bypasser",
+      "default_icon": "imgur_icon128.png"
+  },
+  "commands":{
+  },
+  "manifest_version": 2
+}
