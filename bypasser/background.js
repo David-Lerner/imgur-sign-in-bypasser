@@ -12,7 +12,7 @@ function convertUrl() {
     var targ,newTarg; //Declaring variables
     chrome.tabs.query({ active: true, lastFocusedWindow: true }, function (tabs) {
 	targ=tabs[0].url;
-	newTarg=targ+"/embed?pub=true";
+	newTarg=targ.split('#')[0]+"/embed?pub=true";
 	return newTarg;
     });
     chrome.tabs.query({ active: true, lastFocusedWindow: true }, function (tabs) {
